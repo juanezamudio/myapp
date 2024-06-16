@@ -42,7 +42,6 @@ export default function Dashboard() {
         </div>
         <div className="mt-4">
           <h2 className="text-lg text-black font-medium">My Garden</h2>
-
           <div className="flex items-center mt-2 space-x-4">
             <div className="w-32 h-32 overflow-hidden rounded-lg relative z-0">
               <a href="#">
