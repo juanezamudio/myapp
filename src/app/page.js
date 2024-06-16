@@ -6,15 +6,9 @@ export default function Home() {
      <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
         <div className="flex justify-center">
-<<<<<<< HEAD
           <img src="/images/logo.png" alt="Pocket Farmer Logo" className="h-24 w-auto" />
         </div>
         <form className="space-y-6">
-=======
-          <img src="/logo.png" alt="Pocket Farmer Logo" className="h-12 w-12" />
-          <h1 className="text-3xl font-bold text-gray-900">Pocket Farmer</h1>
-        </div> <form className="space-y-6">
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
               Email
@@ -25,11 +19,7 @@ export default function Home() {
               id="email"
               autoComplete="email"
               required
-<<<<<<< HEAD
               className="w-full text-black px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-=======
-              className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
               placeholder="name@email.com"
             />
           </div>
@@ -44,11 +34,7 @@ export default function Home() {
                 id="password"
                 autoComplete="current-password"
                 required
-<<<<<<< HEAD
                 className="w-full text-black px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-=======
-                className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
                 placeholder="password123"
               />
               <button
@@ -87,11 +73,7 @@ export default function Home() {
           <div>
             <button
               type="submit"
-<<<<<<< HEAD
               className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-[#367530] border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-=======
-              className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
             >
               Login
             </button>
@@ -105,32 +87,20 @@ export default function Home() {
             type="button"
             className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-<<<<<<< HEAD
             <img src="/images/google_icon.webp" alt="Google Icon" className="w-auto h-6 mr-2" />
-=======
-            <img src="/google-icon.png" alt="Google Icon" className="w-5 h-5 mr-2" />
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
             Continue with Google
           </button>
           <button
             type="button"
             className="flex items-center justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
-<<<<<<< HEAD
             <img src="/images/apple_icon.png" alt="Apple Icon" className="w-auto h-5 mr-2" />
-=======
-            <img src="/apple-icon.png" alt="Apple Icon" className="w-5 h-5 mr-2" />
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
             Continue with Apple
           </button>
         </div>
         <div className="text-sm text-center text-gray-600">
           Don’t have an account?{' '}
-<<<<<<< HEAD
           <a href="#" className="font-medium text-[#367530] hover:text-[#367530]">
-=======
-          <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
->>>>>>> 1162ff1927370d4a08859eb00b8892f38340d04c
             Register Here
           </a>
         </div>
