@@ -1,10 +1,10 @@
-const { createServer } = require('https')
+const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
  
 const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'pocket-farmer-pmpbu5qgca-ue.a.run.app'
-const port = 8080
+const hostname = 'localhost'
+const port = 3000
 // when using middleware `hostname` and `port` must be provided below
 const app = next({ dev, hostname, port })
 const handle = app.getRequestHandler()
