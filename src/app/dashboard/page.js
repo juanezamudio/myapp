@@ -32,15 +32,25 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gray-100">
       <div className="px-4 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl text-black font-semibold">Hey there, Alex</h1>
+          <h1 className="text-2xl text-black font-semibold">Hey there, Alex</h1>
           <img
-            src="/profile-picture.jpg"
+            src="/images/profile_picture.png"
             alt="Profile"
-            className="w-10 h-10 rounded-full"
+            className="w-24 h-24 rounded-full"
           />
         </div>
         <div className="mt-4">
-          <h2 className="text-lg text-black font-medium">My Garden</h2>
+          <div className="flex justify-between mx-4">
+            <h2 className="text-lg text-black font-medium">My Garden</h2>
+            <div className="bg-green-500 no-undeline rounded-md p-2 px-4 ">
+              <a
+                href="#"
+                className="text-sm text-white hover:no-underline font-bold hover:underline"
+              >
+                View More
+              </a>
+            </div>
+          </div>
           <div className="flex items-center mt-2 space-x-4">
             <div className="w-32 h-32 overflow-hidden rounded-lg relative z-0">
               <a href="#">
@@ -56,7 +66,7 @@ export default function Dashboard() {
             </div>
             <div className="w-32 h-32 overflow-hidden rounded-lg">
               <img
-                src="/fruit.jpg"
+                src="/images/fruits.jpg"
                 alt="Fruit"
                 className="object-cover w-full h-full"
               />
@@ -64,74 +74,114 @@ export default function Dashboard() {
             </div>
             <div className="w-32 h-32 overflow-hidden rounded-lg">
               <img
-                src="/vegetables.jpg"
+                src="/images/vegetables.jpg"
                 alt="Vegetables"
                 className="object-cover w-full h-full"
               />
               <p className="mt-1 text-center">Vegetables</p>
             </div>
-            <a href="#" className="text-sm text-green-600 hover:underline">
-              View More
-            </a>
           </div>
         </div>
-        <div className="mt-6">
+        <div className="mt-6 text-black ">
           <h2 className="text-lg font-medium">Weather</h2>
-          <div className="flex items-center p-4 mt-2 bg-white border rounded-lg shadow-md">
-            <div className="flex items-center">
-              <img
-                src="/weather.jpg"
-                alt="Weather"
-                className="w-24 h-24 rounded-lg"
-              />
-              <div className="ml-4">
-                <p className="text-2xl font-semibold">90°F</p>
-                <p className="text-sm text-gray-600">Cloudy</p>
+          <div className="flex items-center justify-evenly p-4 mt-2 bg-white border rounded-lg shadow-md border-2 border-black box-border max-w-fit ">
+            <div className="flex flex-col items-strech justify-between space-y-6 max-w-fill">
+              <div className="flex text-black items-center">
+                <div className="flex items-center space-x-6">
+                  <div className="ml-4">
+                    <p className="text-2xl font-semibold">90°F</p>
+                    <p className="text-sm text-gray-600">Cloudy</p>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/weather.jpg"
+                      alt="Weather"
+                      className="w-32 h-24 object-fill brightness-125 rounded-lg"
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center ml-6 space-x-4">
-              <div className="text-center">
-                <p className="text-sm font-medium">4 mph</p>
-                <p className="text-xs text-gray-600">Wind</p>
-              </div>
-              <div className="text-center">
-                <p className="text-sm font-medium">76%</p>
-                <p className="text-xs text-gray-600">Humidity</p>
-              </div>
-              <div className="text-center">
-                <p className="text-sm font-medium">30%</p>
-                <p className="text-xs text-gray-600">Rain</p>
+              <div className="flex items-center text-black ml-6 space-x-4">
+                <div className="text-center">
+                  <p className="text-sm font-medium">4 mph</p>
+                  <p className="text-xs text-gray-600">Wind</p>
+                </div>
+                <div className="text-cente">
+                  <p className="text-sm font-medium">76%</p>
+                  <p className="text-xs text-gray-600">Humidity</p>
+                </div>
+                <div className="text-center">
+                  <p className="text-sm font-medium">30%</p>
+                  <p className="text-xs text-gray-600">Rain</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="mt-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-medium">Reminders</h2>
-            <a href="#" className="text-sm text-green-600 hover:underline">
-              View More
-            </a>
-          </div>
-          <div className="p-4 mt-2 bg-white border rounded-lg shadow-md">
-            <div className="flex items-center justify-between">
-              <p className="font-medium">Water Basil</p>
-              <p className="text-sm text-gray-600">11:00 a.m.</p>
-            </div>
-            <div className="flex items-center justify-between mt-2">
-              <p className="font-medium">Avocado Tree Masterclass</p>
-              <p className="text-sm text-gray-600">Today 11:00 a.m.</p>
-            </div>
-            <div className="flex items-center justify-between mt-2">
-              <p className="font-medium">Mix in Fertilizer</p>
-              <p className="text-sm text-gray-600">07/04/24</p>
+            <h2 className="text-lg text-black font-medium">Reminders</h2>
+            <div className="bg-green-500 no-undeline rounded-md p-2 px-4 ">
+              <a
+                href="#"
+                className="text-sm text-white hover:no-underline font-bold hover:underline"
+              >
+                View All
+              </a>
             </div>
           </div>
+          <form>
+            <div className="p-4 mt-2 bg-white border text-black rounded-lg shadow-md border-2 border-black">
+              <div className="flex items-center justify-between">
+                <div className="flex space-x-1 items-center ">
+                  <input
+                    id="task"
+                    name="task"
+                    type="checkbox"
+                    className="h-4 w-4 rounded border-red-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                  <label for="task" className="text-green-500">
+                    Tomato watering
+                  </label>
+                </div>
+                <p className="text-sm text-gray-600">11:00 a.m.</p>
+              </div>
+              <div className="flex items-center justify-between mt-2">
+              <div className="flex space-x-1 items-center ">
+                  <input
+                    id="task"
+                    name="task"
+                    type="checkbox"
+                    className="h-4 w-4 rounded border-red-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                  <label for="task" className="text-green-500">
+                    Avocado Masterclass
+                  </label>
+                </div>
+                <p className="text-sm text-gray-600">Today 11:00 a.m.</p>
+              </div>
+              <div className="flex items-center justify-between mt-2">
+              <div className="flex space-x-1 items-center ">
+                  <input
+                    id="task"
+                    name="task"
+                    type="checkbox"
+                    className="h-4 w-4 rounded border-red-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                  <label for="task" className="text-green-500">
+                    Mix in fertilizer
+                  </label>
+                </div>
+                <p className="text-sm text-gray-600">07/04/24</p>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t shadow-lg">
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-[#06352F] border-t shadow-lg">
         <div className="flex justify-around">
           <button className="flex flex-col items-center">
-            <img src="/home-icon.svg" alt="Home" className="w-6 h-6" />
+            <HomeIcon/>
             <p className="text-xs">Home</p>
           </button>
           <button className="flex flex-col items-center">
@@ -139,7 +189,7 @@ export default function Dashboard() {
             <p className="text-xs">Plant</p>
           </button>
           <button className="flex flex-col items-center">
-            <img src="/star-icon.svg" alt="Star" className="w-6 h-6" />
+            <BookOpenIcon />
             <p className="text-xs">Learn</p>
           </button>
           <button className="flex flex-col items-center">
