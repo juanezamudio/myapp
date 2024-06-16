@@ -1,5 +1,6 @@
 # To learn more about how to use Nix to configure your environment
 # see: https://developers.google.com/idx/guides/customize-idx-env
+
 {pkgs}: {
   # Which nixpkgs channel to use.
   channel = "stable-23.11"; # or "unstable"
@@ -9,6 +10,7 @@
     pkgs.yarn
     pkgs.nodePackages.pnpm
     pkgs.bun
+    pkgs.google-cloud-sdk
     pkgs.kubectl
   ];
   # Sets environment variables in the workspace
