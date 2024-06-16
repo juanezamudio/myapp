@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { useInfiniteQuery } from "@tanstack/react-query";
 
 export default function Dashboard() {
   const posts = [
