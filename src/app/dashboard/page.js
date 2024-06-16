@@ -190,6 +190,9 @@ export default function Dashboard() {
             <p className="text-xs">Plant</p>
           </button>
           <button className="flex flex-col items-center">
+            <img src="/sparkle.svg" alt="Sparkle" className="w-6 h-6"/>
+          </button>
+          <button className="flex flex-col items-center">
             <BookOpenIcon />
             <p className="text-xs">Learn</p>
           </button>
