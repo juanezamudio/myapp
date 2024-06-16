@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import {HomeIcon, BookOpenIcon} from '@heroicons/react/24/solid';
+import {HomeIcon, BookOpenIcon, SparklesIcon} from '@heroicons/react/24/solid';
 
 export default function Dashboard() {
   const posts = [
@@ -190,7 +190,8 @@ export default function Dashboard() {
             <p className="text-xs">Plant</p>
           </button>
           <button className="flex flex-col items-center">
-            <img src="/sparkle.svg" alt="Sparkle" className="w-6 h-6"/>
+            <SparklesIcon/>
+            <p className="text-xs">Plant AI</p>
           </button>
           <button className="flex flex-col items-center">
             <BookOpenIcon />

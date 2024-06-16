@@ -49,6 +49,7 @@ const Login = () => {
                     d="M15 12m0 0c0 2.485-2.014 4.5-4.5 4.5S6 14.485 6 12 8.014 7.5 10.5 7.5 15 9.515 15 12z"
                   />
                 </svg>
+                preventDAfault
               </button>
             </div>
           </div>
@@ -71,12 +72,14 @@ const Login = () => {
             </div>
           </div>
           <div>
+            <a href="/dashboard">
             <button
               type="submit"
               className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-[#367530] border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
             >
               Login
             </button>
+            </a>
           </div>
         </form>
         <div className="relative flex items-center justify-center w-full mt-6 border-t border-gray-300">
