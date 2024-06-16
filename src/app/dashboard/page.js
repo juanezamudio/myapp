@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import {HomeIcon, BookOpenIcon} from '@heroicons/react/24/solid';
 
 export default function Dashboard() {
   const posts = [
